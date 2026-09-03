@@ -195,7 +195,7 @@ export default function App() {
               />
               {charCount > 0 && (
                 <span className="absolute bottom-3 right-4 rounded-full bg-emerald-50 px-3 py-1 text-[12px] font-semibold text-emerald-700">
-                  {appConfig.input.chars.replace('{n}', String(charCount))} · 약 {approxMin}분
+                  {appConfig.reader.chars.replace('{n}', String(charCount))} · 약 {approxMin}분
                 </span>
               )}
             </div>
