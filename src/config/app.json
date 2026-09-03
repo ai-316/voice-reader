@@ -1,0 +1,27 @@
+{
+  "title": "말씀 읽어주기",
+  "subtitle": "긴 글도 편하게 눈감고 들으세요",
+  "input": {
+    "label": "읽어줄 글을 입력하세요",
+    "placeholder": "여기에 읽고 싶은 글을 붙여 넣으세요. 아래 '붙여넣기' 버튼을 눌러도 됩니다.",
+    "pasteButton": "붙여넣기",
+    "confirm": "확인"
+  },
+  "reader": {
+    "play": "본문 읽어주기",
+    "pause": "일시정지",
+    "resume": "이어서 듣기",
+    "stop": "정지",
+    "newInput": "새로 입력",
+    "speedLabel": "읽기 속도",
+    "speedSlow": "느리게",
+    "speedNormal": "보통",
+    "speedFast": "빠르게",
+    "estimated": "약 {min}분 정도 걸립니다",
+    "chars": "{n}자",
+    "ready": "아래 버튼을 누륌면 읽어드립니다",
+    "playing": "읽고 있습니다",
+    "paused": "일시정지됨",
+    "finished": "다 읽었습니다"
+  }
+}

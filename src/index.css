@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Gowun Batang", "Noto Sans KR", serif;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background: #f2fbef;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+  font-family: var(--font-body);
+}
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+
+.btn-primary, .btn-soft {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 1rem; padding: 0.95rem 1.25rem; font-size: 15px; font-weight: 700;
+  cursor: pointer; border: none; transition: transform 0.15s ease, filter 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #5fb96b 0%, #2e9e58 100%);
+  box-shadow: 0 12px 26px -10px rgba(46, 158, 88, 0.55), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-primary:active:not(:disabled) { transform: scale(0.965); }
+.btn-primary:disabled { cursor: default; opacity: 0.5; }
+
+.btn-soft {
+  color: #41544b;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+}
+.btn-soft:hover { background: #fff; }
+.btn-soft:active { transform: scale(0.97); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise 0.8s cubic-bezier(0.22,1,0.36,1) both; }
+
+@keyframes leaf-fall {
+  0% { transform: translateY(-8vh) translateX(0) rotate(0deg); }
+  100% { transform: translateY(112vh) translateX(var(--sway, 22px)) rotate(360deg); }
+}
+.leaf { top: -6vh; animation: leaf-fall linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf { animation: none !important; }
+}

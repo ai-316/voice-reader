@@ -1,0 +1,6 @@
+{
+  "appId": "kr.voicereader.app",
+  "appName": "말씀 읽어주기",
+  "webDir": "dist",
+  "backgroundColor": "#F2FBEF"
+}
